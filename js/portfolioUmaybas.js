@@ -1,6 +1,6 @@
 // Type In Effect for Intro Tagline
-const p = document.querySelector('.introTagline');
-const text = "Computer Engineering Student • Beginner Programmer • Tech Enthusiast";
+const effect = document.querySelector('.typeInEffect');
+const text = "Jan Marc Umaybas";
 function textTypingEffect(element, text, i = 0) {
     element.textContent += text[i];
 
@@ -8,13 +8,13 @@ function textTypingEffect(element, text, i = 0) {
         setTimeout(() => {
             element.textContent = ""; 
             textTypingEffect(element, text, 0); 
-        }, 3000);
+        }, 8000);
         return;
     }
 
-    setTimeout(() => textTypingEffect(p, text, i + 1), 50);
+    setTimeout(() => textTypingEffect(effect, text, i + 1), 50);
 }
-textTypingEffect(p, text);
+textTypingEffect(effect, text);
 
 /* 
  * NOTE TO SIR:
